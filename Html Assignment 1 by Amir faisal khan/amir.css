@@ -1,0 +1,35 @@
+body {
+    background-image: url(Background.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+footer{
+    position: absolute;
+    font-size: 8px;
+    color: black;
+    text-align: right;
+    bottom: 0;
+    right:0;
+}
+
+
+main {
+    padding: 20px;
+} font-weight: bolder;
+img {
+    min-height: min-content;
+    min-width: min-content;
+}
+
+h2{
+    font-size: medium;
+}
+h3 {
+    font-size: large
+       
+}
+img {
+    t
+}

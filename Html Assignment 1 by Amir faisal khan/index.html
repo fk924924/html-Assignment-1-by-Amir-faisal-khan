@@ -1,0 +1,70 @@
+    <!DOCTYPE html>
+<html lang="en"> <!--Language of HTML docs-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pizza order Form</title>
+    <link rel="stylesheet" href="amir.css"> <!--Linking the CSS with HTML-->
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pizzahub</h1> <
+    </header>
+    <main>
+        <form action="Order_confirmation.php" method="post">
+        <fieldset>
+            <legend> Personal Data</legend>
+            <label for="name"> Name:</label>
+            <input type="text" id="Name" name="Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone"> Phone: </label>
+            <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+        <fieldset>
+            <legend> Details of Pizza</legend>
+            <label for="quantity"> quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="15" required>
+            <label for="Size"> Size:</label>
+            <select id="size" name="Size" required>
+                <option value="small">Small</option><!--For a  data at a time-->
+                <option value="medium">Medium</option>
+                <option value="Large">Large</option>
+                </select>
+                <label for="Crust">Crust:</label>
+                <input type="text" id="crust" name="crust" required>
+                <label for="toppings">Toppings:</label>
+                <input type="text" id="toppings" name="toppings">
+
+            </fieldset>
+            <fieldset>
+                <legend>Delivery Options</legend>
+                <label><input type="radio" name="delivery" value="takeout" required> Takeout</label>
+                <label><input type="radio" name="delivery" value="delivery"> Delivery</label>
+                <label><input type="radio" name="delivery" value="eat-in"> Eat-in</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit"> <!--Submits the value-->
+            <input type="reset" value="Reset"><!-- reset the data entered-->
+           
+
+        </form>
+    </main>
+    <figure>
+        <img  src="pizza.jpg" alt="Pizza image" width="220px" height="148px"> <!--Attaching the image file to the  HTML-->
+    </figure>
+    <footer>
+        <H1> For more information, Contact us at Pizzahub883@gmail.com</H1>
+        <H2> Phone number: 365 883 5352</H2>
+        <h3>  390 edward ontario </h3>
+    </footer>
+
+    
+
+</body>
+</html>
